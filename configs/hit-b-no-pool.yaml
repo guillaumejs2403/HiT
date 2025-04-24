@@ -1,0 +1,16 @@
+model:
+  name: hit-no-pool
+  params:
+    image_size: 224
+    num_layers: 12
+    num_heads: 12
+    hidden_dim: 768
+    mlp_ratio: 4
+    dropout: 0.0
+    attention_dropout: 0.2
+    mlp_dropout: 0.0
+    drop_path: 0.2
+    num_classes: 1000
+    patch_size: 16
+    use_pos_tokens: True
+    block_version: '2.2'
