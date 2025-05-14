@@ -1,6 +1,0 @@
-model:
-  name: timm
-  params:
-    model_name: 'deit3_small_patch16_224.fb_in1k'
-    num_classes: 1000
-    pretrained: True
