@@ -1,19 +1,12 @@
-# Hindered Transformer — CVPR 2025  
+# Hindered Transformer — CVPR 2025 Workshop
 **Disentangling Visual Transformers: Patch-level Interpretability for Image Classification**  
 **Official Code Repository**
 
----
+[Webpage](https://guillaumejs2403.github.io/HiT/)
 
-## 🚧 Coming Soon
+[Paper](https://arxiv.org/abs/2502.17196)
 
-We will soon release our full code and model weights — stay tuned!
-
-### TODOs:
-- [x] Create GitHub repo  
-- [x] Upload code  
-- [x] Upload ImageNet pretrained models (on HuggingFace)  
-- [x] Update README.md  
-- [ ] Create project webpage  
+![main figure](assets/main.png)
 
 ---
 
@@ -91,7 +84,7 @@ python CausalMetrics.py --gpu-id $GPU \
 
 ## 🧠 Visualizing HiT Decisions
 
-### 🌊 Saliency Maps
+### Saliency Maps
 
 Similar to the insertion metric — just add an output path:
 
@@ -106,7 +99,7 @@ python visualization.py --gpu-id $GPU \
                         --model.params.num_classes $NUMCLASSES int
 ```
 
-### 🧩 Layer-wise Saliency Maps
+### Layer-wise Saliency Maps
 
 Use `layer-saliency.py`, which uses the same arguments:
 
@@ -175,7 +168,7 @@ If you use this work, please cite us:
 
 ```bibtex
 @InProceedings{jeanneret2025disentangling,
-    author = {Jeanneret, Guillaume and Simon, Lo{"i}c and Jurie, Fr{'e}d{'e}ric},
+    author = {Jeanneret, Guillaume and Simon, Lo{\"\i}c and Jurie, Fr{\'e}d{\'e}ric},
     title = {Disentangling Visual Transformers: Patch-level Interpretability for Image Classification},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
     month = {June},
@@ -187,7 +180,7 @@ If you use this work, please cite us:
 
 ## 🙏 Acknowledgements
 
-We thank the [DeiT](https://github.com/facebookresearch/deit) repository for their inspiring work!
+We thank the [DeiT](https://github.com/facebookresearch/deit) repository for their amazing work!
 
 ---
 
