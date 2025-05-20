@@ -101,7 +101,7 @@ class EncoderBlockHiT(EncoderBlockBase):
 def get_block_version(version: str = 'hit'):
     print('Block version:', version)
     if version == 'hit':
-        return EncoderBlockV2_2
+        return EncoderBlockHiT
     elif version == 'vit':
         return EncoderBlockViT
 
