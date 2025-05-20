@@ -13,4 +13,4 @@ model:
     num_classes: 1000
     patch_size: 16
     use_pos_tokens: True
-    block_version: '2.2'
+    block_version: 'hit'

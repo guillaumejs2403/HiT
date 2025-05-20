@@ -74,7 +74,7 @@ class EncoderBlockViT(EncoderBlockBase):
         return x[:, 1:], x[:, :1], other_outputs
 
 
-class EncoderBlockV2_2(EncoderBlockBase):
+class EncoderBlockHiT(EncoderBlockBase):
     def forward(self,
                 input: torch.Tensor,
                 class_token: torch.Tensor,
@@ -98,11 +98,11 @@ class EncoderBlockV2_2(EncoderBlockBase):
         return input, class_token, other_outputs
 
 
-def get_block_version(version: str = '2.2'):
+def get_block_version(version: str = 'hit'):
     print('Block version:', version)
-    if version == '2.2':
+    if version == 'hit':
         return EncoderBlockV2_2
-    elif version == 'v':
+    elif version == 'vit':
         return EncoderBlockViT
 
 
